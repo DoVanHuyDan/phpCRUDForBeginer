@@ -68,7 +68,7 @@ if($_POST){
 
 
     <!-- html form here where the product information will be entered -->
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" enctype="multipart/form-data">
     <table class='table table-hover table-responsive table-bordered'>
         <tr>
             <td>Name</td>
@@ -81,6 +81,10 @@ if($_POST){
         <tr>
             <td>Price</td>
             <td><input type='text' name='price' class='form-control' /></td>
+        </tr>
+        <tr>
+             <td>Photo</td>
+            <td><input type="file" name="image" /></td>
         </tr>
         <tr>
             <td></td>

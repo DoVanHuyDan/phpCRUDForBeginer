@@ -152,7 +152,7 @@ function delete_user( id ){
         // pass the id to delete.php and execute the delete query
         window.location = 'delete.php?id=' + id;
     } 
-}
+}   
 </script>
 </body>
 </html>
